@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <script type="module" src="script.js" defer></script>
+    <title>Ocjenjivanje</title>
+  </head>
+  <body>
+    <h1 class="text-center mb-3">Ocjenjivanje</h1>
+    <div class="container">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Perilica</label>
+          <select class="form-select" id="validationCustom01" required>
+            <option selected disabled value="">Ocjeni...</option>
+            <option value="1">Dobro</option>
+            <option value="0">Loše</option>
+          </select>
+          <div class="valid-feedback">Hvala na ocjeni!</div>
+          <div class="invalid-feedback">Potrebno odabrati jednu opciju.</div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Sudoper</label>
+          <select class="form-select" id="validationCustom02" required>
+            <option selected disabled value="">Ocjeni...</option>
+            <option value="1">Dobro</option>
+            <option value="0">Loše</option>
+          </select>
+          <div class="valid-feedback">Hvala na ocjeni!</div>
+          <div class="invalid-feedback">Potrebno odabrati jednu opciju.</div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom03" class="form-label">Štednjak</label>
+          <select class="form-select" id="validationCustom03" required>
+            <option selected disabled value="">Ocjeni...</option>
+            <option value="1">Dobro</option>
+            <option value="0">Loše</option>
+          </select>
+          <div class="valid-feedback">Hvala na ocjeni!</div>
+          <div class="invalid-feedback">Potrebno odabrati jednu opciju.</div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom04" class="form-label">Smeće</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Ocjeni...</option>
+            <option value="1">Dobro</option>
+            <option value="0">Loše</option>
+          </select>
+          <div class="valid-feedback">Hvala na ocjeni!</div>
+          <div class="invalid-feedback">Potrebno odabrati jednu opciju.</div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom05" class="form-label"
+            >Stolovi i ormar</label
+          >
+          <select class="form-select" id="validationCustom05" required>
+            <option selected disabled value="">Ocjeni...</option>
+            <option value="1">Dobro</option>
+            <option value="0">Loše</option>
+          </select>
+          <div class="valid-feedback">Hvala na ocjeni!</div>
+          <div class="invalid-feedback">Potrebno odabrati jednu opciju.</div>
+        </div>
+        <div class="col-md-4">
+          <label for="Kontrola" class="form-label">5S kontrola</label>
+          <select class="form-select" id="Kontrola">
+            <option selected disabled value="">Odaberi žiri...</option>
+            <option>Marin</option>
+            <option>Zvonac</option>
+            <option>Antonijo</option>
+            <option>Karlo</option>
+            <option>Tin</option>
+            <option>Ena</option>
+            <option>Kic</option>
+            <option>Marko</option>
+            <option>Studenti</option>
+            <option>Zagy</option>
+            <option>Sljiva</option>
+            <option>Tino</option>
+            <option>Jo</option>
+            <option>Filip</option>
+            <option>Petra</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="Komentar" class="form-label">Komentar</label>
+          <textarea class="form-control" id="Komentar" rows="3"></textarea>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Potvrdi</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

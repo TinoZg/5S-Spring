@@ -1,0 +1,7 @@
+spring:
+  datasource.url: jdbc:h2:./5s;AUTO_SERVER=TRUE;
+  sql.init.mode: always
+  server.adress: 10.10.20.24
+  h2.console:
+    enabled: true
+    settings.web-allow-others: true
