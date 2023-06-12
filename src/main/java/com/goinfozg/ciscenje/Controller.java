@@ -2,6 +2,7 @@ package com.goinfozg.ciscenje;
 
 import com.goinfozg.ciscenje.model.Ocjena;
 import com.goinfozg.ciscenje.service.OcjenaService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.Date;
@@ -14,10 +15,10 @@ public class Controller {
 
     private final OcjenaService ocjenaService;
 
+    @Autowired
     public Controller(OcjenaService ocjenaService) {
         this.ocjenaService = ocjenaService;
     }
-
 
 
     @GetMapping("ocjene/{datum}")

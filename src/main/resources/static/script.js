@@ -17,7 +17,6 @@ let osobe = [
   'Marin',
   'Zvonac',
   'Antonijo',
-  'Karlo',
   'Tin',
   'Ena',
   'Kic',
@@ -55,6 +54,7 @@ for (let i = 0; i < osobe.length; i++) {
 
 async function getOcjenaKomentarKontrolaJucer(datum) {
   const response = await fetch(`http://10.10.20.24:8080/api/ocjene/${datum}`);
+  if (!response.headers.get('content-type')) return;
   const data = await response.json();
   const komentar = data.komentar;
   const kontrola = data.kontrola;
@@ -71,6 +71,7 @@ async function getOcjenaKomentarKontrolaJucer(datum) {
 
 async function getOcjenaKomentarKontrolaDanas(datum) {
   const response = await fetch(`http://10.10.20.24:8080/api/ocjene/${datum}`);
+  if (!response.headers.get('content-type')) return;
   const data = await response.json();
   const komentar = data.komentar;
   const kontrola = data.kontrola;
@@ -80,7 +81,6 @@ async function getOcjenaKomentarKontrolaDanas(datum) {
     parseInt(data.stednjak) +
     parseInt(data.stoloviOrmar) +
     parseInt(data.sudoper);
-  console.log(data);
   document.getElementById(1).children[3].innerText = ocjena ? ocjena : 0;
   document.getElementById(1).children[4].innerText = komentar ? komentar : '';
   document.getElementById(1).children[5].innerText = kontrola ? kontrola : '';

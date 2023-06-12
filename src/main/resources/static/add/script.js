@@ -9,7 +9,6 @@ let osobe = [
   'Marin',
   'Zvonac',
   'Antonijo',
-  'Karlo',
   'Tin',
   'Ena',
   'Kia',
